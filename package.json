@@ -1,0 +1,37 @@
+{
+  "name": "dependency-version-bot",
+  "version": "1.0.0",
+  "description": "A GitHub bot for automated dependency version bumping using a structured protocol",
+  "main": "dependency-bot.js",
+  "type": "module",
+  "scripts": {
+    "start": "node dependency-bot.js",
+    "cli": "node cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "dependency-ai-bot": "./cli.js"
+  },
+  "keywords": [
+    "github",
+    "bot",
+    "dependencies",
+    "automation",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@octokit/auth-app": "^4.0.0",
+    "@octokit/rest": "^19.0.0",
+    "commander": "^11.1.0",
+    "dotenv": "^16.5.0",
+    "js-yaml": "^4.1.0",
+    "semver": "^7.5.0",
+    "node-fetch": "^3.3.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
